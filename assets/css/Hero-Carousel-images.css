@@ -2,3 +2,45 @@
   object-fit: cover;
 }
 
+@media (min-width: 992px) {
+  p {
+  }
+}
+
+@media (min-width: 300px) {
+  .product-type {
+    margin-top: 4rem;
+  }
+}
+
+.product-type {
+}
+
+@media (min-width: 992px) {
+  .product-type {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 300px) {
+  .product-type:first-child {
+    margin-top: 1rem;
+  }
+}
+
+element.style {
+  width: 100%;
+}
+
+@media (min-width: 300px) {
+  .follow-us {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .follow-us {
+    margin-top: 0;
+  }
+}
+
