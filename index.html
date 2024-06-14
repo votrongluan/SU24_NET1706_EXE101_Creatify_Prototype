@@ -1,11 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Prototyping</h1>
-  </body>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>3dcreatify</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Hero-Carousel-images.css">
+    <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+</head>
+
+<body>
+    <header class="pb-4" style="background: rgba(241,242,244,0.8);">
+        <nav class="navbar navbar-expand-md py-3" style="background: rgba(241,242,244,0.8);">
+            <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bezier">
+                            <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"></path>
+                            <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"></path>
+                        </svg></span><span>Creatify</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Sản phẩm</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Dịch vụ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Hướng dẫn</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Về chúng tôi</a></li>
+                    </ul><button class="btn btn-secondary me-4" type="button">Đăng nhập</button><button class="btn btn-primary" type="button">Đăng ký</button>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-1">
+            <div class="d-flex justify-content-between" style="column-gap: 1rem;">
+                <form class="d-flex" style="flex: 1;"><input class="form-control" type="search" placeholder="Tìm kiếm sản phẩm"><button class="btn btn-primary d-flex justify-content-lg-center align-items-lg-center ms-4" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                        </svg></button></form><button class="btn btn-light bg-white d-flex justify-content-lg-center align-items-lg-center" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cart">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"></path>
+                    </svg>&nbsp;Giỏ hàng&nbsp;<span class="badge bg-primary">0</span></button>
+            </div>
+        </div>
+    </header>
+    <main class="bg-light" style="min-height: 80vh;">
+        <div data-aos="zoom-in" class="simple-slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url(&quot;assets/img/photo-1615286922420-c6b348ffbd62-1.jpg&quot;) center center / cover no-repeat;"></div>
+                    <div class="swiper-slide" style="background: url(&quot;assets/img/photo-1609862776364-897efc7dafdb.jpg&quot;) center center / cover no-repeat;"></div>
+                    <div class="swiper-slide" style="background: url(&quot;assets/img/photo-1549563316-5384a923453e.jpg&quot;) center center / cover no-repeat;"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="container">
+            <section class="mt-0 pt-5">
+                <h2 class="fs-3 text-center" data-aos="fade-up" data-aos-duration="600">Sản phẩm bán chạy</h2>
+                <div class="bg-white border rounded mt-4">
+                    <ul class="nav nav-tabs d-flex justify-content-center" role="tablist" data-aos="fade-up" data-aos-duration="600">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-1" style="color: var(--bs-black);"><strong>Mô hình Godzilla</strong></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-2" style="color: var(--bs-black);"><strong>Mô hình Superman</strong></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-3" style="color: var(--bs-black);"><strong>Mô hình Batman</strong></a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active p-2" role="tabpanel" id="tab-1">
+                            <div class="d-flex justify-content-between">
+                                <div data-aos="fade-up" data-aos-duration="600" style="/*flex: 1;*/background: url(&quot;assets/img/g663a04905019e107adac127a08f7159be2d197ed79eb0f5ba707b86e5622e6b6e3a19931aed2d1e2208d2bb1271d531962475209ac74cab49ef75dd4d983f031_640.jpg&quot;) center / cover;width: 400px;height: 400px;"></div>
+                                <div data-aos="fade-left" data-aos-duration="600" class="ms-0 p-4" style="position: relative;flex: 1;">
+                                    <h1 class="fs-4">Mô hình Gorrilla</h1>
+                                    <p>Mô tả: Hoàn thiện từ khâu chuẩn bị tỷ mĩ để đạt được sự hoàn</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="text-black-50">Giá:</p>
+                                        <p><strong>1.200.000 (đồng)</strong></p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="text-black-50">Chất liệu:</p>
+                                        <p><strong>Nhựa ABS</strong></p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="text-black-50">Đánh giá:</p>
+                                        <p class="d-flex justify-content-lg-center align-items-lg-center"><strong>5.0&nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-star-fill" style="color: var(--bs-yellow);">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                            </svg><strong>&nbsp;(1233 đánh giá)</strong></p>
+                                    </div>
+                                    <div class="d-flex justify-content-between" style="width: calc(100% - 40px);position: absolute;bottom: 1rem;">
+                                        <div style="/*flex: 1;*/"><button class="btn btn-light" type="button">Xem chi tiết</button></div>
+                                        <div><button class="btn btn-secondary" type="button">Thêm vào giỏ hàng</button><button class="btn btn-primary ms-4" type="button" style="flex: 1;">Mua ngay</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane p-2" role="tabpanel" id="tab-2">
+                            <div class="d-flex justify-content-between">
+                                <div data-aos="fade-up" data-aos-duration="600" style="/*flex: 1;*/background: url(&quot;assets/img/g0b2995d4b61d9fad36e632fe4a65066acc466fc6e50d7783eeb917cbf28587d98dbc15285cb3fbe796c2344f67dc0179be2411f68e58ab323edba360b7a06a8b_640.jpg&quot;) center / cover;width: 400px;height: 400px;"></div>
+                                <div data-aos="fade-left" data-aos-duration="600" class="ms-0 p-4" style="position: relative;flex: 1;">
+                                    <h1 class="fs-4">Mô hình Gorrilla</h1>
+                                    <p>Mô tả: Hoàn thiện từ khâu chuẩn bị tỷ mĩ để đạt được sự hoàn</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="text-black-50">Giá:</p>
+                                        <p><strong>1.200.000 (đồng)</strong></p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="text-black-50">Chất liệu:</p>
+                                        <p><strong>Nhựa ABS</strong></p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="text-black-50">Đánh giá:</p>
+                                        <p class="d-flex justify-content-lg-center align-items-lg-center"><strong>5.0&nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-star-fill" style="color: var(--bs-yellow);">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                            </svg><strong>&nbsp;(1233 đánh giá)</strong></p>
+                                    </div>
+                                    <div class="d-flex justify-content-between" style="width: calc(100% - 40px);position: absolute;bottom: 1rem;">
+                                        <div style="/*flex: 1;*/"><button class="btn btn-light" type="button">Xem chi tiết</button></div>
+                                        <div><button class="btn btn-secondary" type="button">Thêm vào giỏ hàng</button><button class="btn btn-primary ms-4" type="button" style="flex: 1;">Mua ngay</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane p-2" role="tabpanel" id="tab-3">
+                            <div class="d-flex justify-content-between">
+                                <div data-aos="fade-up" data-aos-duration="600" style="/*flex: 1;*/background: url(&quot;assets/img/gdb7c82d8eb0b9c0464f107624867f1e7fd4281d13c9af687ab1d2eda849dab3b7f92d4e27c515a90585cf2b3af91193de16d228e088788790b925a01292fed51_640.png&quot;) center / cover;width: 400px;height: 400px;"></div>
+                                <div data-aos="fade-left" data-aos-duration="600" class="ms-0 p-4" style="position: relative;flex: 1;">
+                                    <h1 class="fs-4">Mô hình Gorrilla</h1>
+                                    <p>Mô tả: Hoàn thiện từ khâu chuẩn bị tỷ mĩ để đạt được sự hoàn</p>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="text-black-50">Giá:</p>
+                                        <p><strong>1.200.000 (đồng)</strong></p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="text-black-50">Chất liệu:</p>
+                                        <p><strong>Nhựa ABS</strong></p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="text-black-50">Đánh giá:</p>
+                                        <p class="d-flex justify-content-lg-center align-items-lg-center"><strong>5.0&nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-star-fill" style="color: var(--bs-yellow);">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                            </svg><strong>&nbsp;(1233 đánh giá)</strong></p>
+                                    </div>
+                                    <div class="d-flex justify-content-between" style="width: calc(100% - 40px);position: absolute;bottom: 1rem;">
+                                        <div style="/*flex: 1;*/"><button class="btn btn-light" type="button">Xem chi tiết</button></div>
+                                        <div><button class="btn btn-secondary" type="button">Thêm vào giỏ hàng</button><button class="btn btn-primary ms-4" type="button" style="flex: 1;">Mua ngay</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pb-0 pt-5">
+                <h2 class="fs-3 text-center" data-aos="fade-up" data-aos-duration="600">Danh mục sản phẩm</h2>
+                <div class="row mt-4" data-aos="fade-right" data-aos-duration="600">
+                    <div class="col" data-bss-hover-animate="pulse" style="cursor: pointer;height: 300px;" title="ok"><a href="#" style="text-decoration: none;color: var(--bs-black);">
+                            <div class="d-flex justify-content-center align-items-center" style="/*opacity: 0.70;*//*background: 0.2;*/background: url(&quot;assets/img/g7ecf932d954beb0c8107b9eb458e03faa976afd7568dc724ecd047bc0131b882741a22026a8fe95c15a0984cb0176206af0c00ac6e3221c3c94e168d83ceb4fa_640.jpg&quot;) center / cover, #ffffff;width: 100%;height: 100%;"></div>
+                            <p class="fs-4 text-center">Collections</p>
+                        </a></div>
+                    <div class="col" data-bss-hover-animate="pulse" style="cursor: pointer;height: 300px;" title="ok"><a href="#" style="text-decoration: none;color: var(--bs-black);">
+                            <div class="d-flex justify-content-center align-items-center" style="/*opacity: 0.70;*//*background: 0.2;*/background: url(&quot;assets/img/g7ecf932d954beb0c8107b9eb458e03faa976afd7568dc724ecd047bc0131b882741a22026a8fe95c15a0984cb0176206af0c00ac6e3221c3c94e168d83ceb4fa_640.jpg&quot;) center / cover, #ffffff;width: 100%;height: 100%;"></div>
+                            <p class="fs-4 text-center">Featured</p>
+                        </a></div>
+                    <div class="col" data-bss-hover-animate="pulse" style="cursor: pointer;height: 300px;" title="ok"><a href="#" style="text-decoration: none;color: var(--bs-black);">
+                            <div class="d-flex justify-content-center align-items-center" style="/*opacity: 0.70;*//*background: 0.2;*/background: url(&quot;assets/img/g7ecf932d954beb0c8107b9eb458e03faa976afd7568dc724ecd047bc0131b882741a22026a8fe95c15a0984cb0176206af0c00ac6e3221c3c94e168d83ceb4fa_640.jpg&quot;) center / cover, #ffffff;width: 100%;height: 100%;"></div>
+                            <p class="fs-4 text-center">Clearence</p>
+                        </a></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+</body>
+
 </html>
