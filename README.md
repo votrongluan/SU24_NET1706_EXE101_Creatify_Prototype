@@ -44,7 +44,7 @@ To collaborate within the team without forking, follow these steps:
 
 We use a Git branching strategy with three main branches:
 
-- `master`: Contains the stable version of the code. Direct commits to this branch are restricted.
+- `main`: Contains the stable version of the code. Direct commits to this branch are restricted.
 - `dev`: Contains the latest development changes. This is the main branch for ongoing development.
 - `test`: Contains code that is under testing before being merged into `dev`.
 
@@ -79,7 +79,7 @@ We use a Git branching strategy with three main branches:
 
 5. After thorough testing, create a pull request from `test` to `dev`.
 
-6. For releases, create a pull request from `dev` to `master`.
+6. For releases, create a pull request from `dev` to `main`.
 
 ### Inviting Collaborators
 
@@ -95,13 +95,8 @@ If you need help, you can reach out via:
 - [Issue Tracker](https://github.com/votrongluan/3d-creatify-prototype/issues)
 - [Email](mailto:support@creatify.com)
 
-## Roadmap
+## Screenshots
 
-Planned features and improvements:
-
-- Adding more sections for detailed service descriptions.
-- Enhancing the portfolio section with more 3D project examples.
-- Integrating a blog section for 3D industry news and updates.
 
 ## Contributing
 
