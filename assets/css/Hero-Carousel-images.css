@@ -47,3 +47,9 @@ element.style {
 element.style : hover {
 }
 
+.product:hover {
+  /*border: 1px solid var(--bs-black);*/
+  transition: transform 0.2s ease 0s;
+  transform: translateY(-4px);
+}
+
