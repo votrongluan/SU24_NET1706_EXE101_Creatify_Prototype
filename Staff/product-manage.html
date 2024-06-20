@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>3dcreatify</title>
+    <meta property="og:description" content="Chúng tôi tự hào là đơn vị tiên phong trong việc ứng dụng các công nghệ in 3D tiên tiến nhất hiện nay.">
+    <meta property="og:type" content="website">
+    <meta name="" content="">
+    <meta property="og:title" content="3D Creatify - Sản phẩm in 3D">
+    <meta property="og:image" content="../assets/img/g61656b62f682696596bf8f9a7606a525175e2ca9cff391fc734a2f941609bbbf0f9413c1499175238d87f4e8ad8a31de7813ba7d26fe5a1f4cf33476ea954db3_640.jpg">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="../assets/css/bs-theme-overrides.css">
+    <link rel="stylesheet" href="../assets/css/Hero-Carousel-images.css">
+    <link rel="stylesheet" href="../assets/css/Navbar-With-Button-icons.css">
+    <link rel="stylesheet" href="../assets/css/Pricing-Yearly--Monthly-badges.css">
+    <link rel="stylesheet" href="../assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md py-3">
+            <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="#"><span><strong>3D Creatify</strong></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                    </ul><a class="btn btn-secondary" role="button" href="../authentication.html">Đăng xuất</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-light" style="/*padding-bottom: 2rem;*/min-height: 80vh;">
+        <div class="d-flex">
+            <div style="min-height: 80vh;background: var(--bs-white);">
+                <div class="p-4 pb-2 pt-2"><a href="product-manage.html" style="text-decoration: none;color: var(--bs-black);">Quản lý sản phẩm</a></div>
+                <div class="p-4 pb-2 pt-2"><a href="order-manage.html" style="text-decoration: none;color: var(--bs-black);">Quản lý đơn hàng</a></div>
+                <div class="p-4 pb-2 pt-2"><a href="custom-order-manage.html" style="text-decoration: none;color: var(--bs-black);">Quản lý đơn hàng tùy chỉnh</a></div>
+            </div>
+            <div style="flex: 1;" class="p-4">
+                <h2 class="fs-3 text-center mt-0">Quản lý sản phẩm</h2>
+                <div class="d-flex mt-4"><button class="btn btn-primary" type="button" style="margin-left: auto;" data-bs-target="#add-modal" data-bs-toggle="modal">Thêm</button></div>
+                <form style="margin-top: 16px;" class="mt-4"><input class="form-control" type="search" placeholder="Nhập nội dung tìm kiếm">
+                    <div class="d-flex flex-lg-row">
+                        <div class="d-flex" style="column-gap: 1rem;margin-left: auto;">
+                            <div>
+                                <p style="margin-bottom: 8px;margin-top: 8px;">Tìm kiếm theo</p><select class="form-select">
+                                    <option value="14">Mã</option>
+                                    <option value="">Sản phẩm</option>
+                                    <option value="">Ngày đặt</option>
+                                    <option value="">Email KH</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p style="margin-bottom: 8px;margin-top: 8px;">Sắp xếp theo</p><select class="form-select">
+                                    <option value="14">Mã</option>
+                                    <option value="">Sản phẩm</option>
+                                    <option value="">Ngày đặt</option>
+                                    <option value="">Email KH</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p style="margin-bottom: 8px;margin-top: 8px;">Thứ tự sắp xếp</p><select class="form-select">
+                                    <option value="12" selected="">Mặc định</option>
+                                    <option value="13">Tăng dần</option>
+                                    <option value="14">Giảm dần</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p style="margin-bottom: 8px;margin-top: 8px;">Trạng thái</p><select class="form-select">
+                                    <option value="Đang giao">Chờ xử lý</option>
+                                    <option value="">Đang giao</option>
+                                    <option value="">Đã giao</option>
+                                </select>
+                            </div><input class="btn btn-primary align-self-end mt-4" type="submit" style="height: fit-content;margin-top: 11px;" value="Tìm">
+                        </div>
+                    </div>
+                </form>
+                <div class="table-responsive mt-4">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Mã</th>
+                                <th class="text-center">Tên</th>
+                                <th class="text-center">Giá</th>
+                                <th class="text-center">Chất liệu</th>
+                                <th class="text-center">Loại sản phẩm</th>
+                                <th class="text-center">Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">20240620001</td>
+                                <td class="text-center">Mô hình Ironman</td>
+                                <td class="text-center">1.200.00 đ</td>
+                                <td class="text-center">Nhựa ABS</td>
+                                <td class="text-center">Collections</td>
+                                <td class="text-center"><a class="btn btn-light" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Cập nhật</a><a class="btn btn-danger ms-2" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Xóa</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">20240620001</td>
+                                <td class="text-center">Mô hình Ironman</td>
+                                <td class="text-center">1.200.00 đ</td>
+                                <td class="text-center">Nhựa ABS</td>
+                                <td class="text-center">Collections</td>
+                                <td class="text-center"><a class="btn btn-light" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Cập nhật</a><a class="btn btn-danger ms-2" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Xóa</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">20240620001</td>
+                                <td class="text-center">Mô hình Ironman</td>
+                                <td class="text-center">1.200.00 đ</td>
+                                <td class="text-center">Nhựa ABS</td>
+                                <td class="text-center">Collections</td>
+                                <td class="text-center"><a class="btn btn-light" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Cập nhật</a><a class="btn btn-danger ms-2" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Xóa</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">20240620001</td>
+                                <td class="text-center">Mô hình Ironman</td>
+                                <td class="text-center">1.200.00 đ</td>
+                                <td class="text-center">Nhựa ABS</td>
+                                <td class="text-center">Collections</td>
+                                <td class="text-center"><a class="btn btn-light" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Cập nhật</a><a class="btn btn-danger ms-2" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Xóa</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">20240620001</td>
+                                <td class="text-center">Mô hình Ironman</td>
+                                <td class="text-center">1.200.00 đ</td>
+                                <td class="text-center">Nhựa ABS</td>
+                                <td class="text-center">Collections</td>
+                                <td class="text-center"><a class="btn btn-light" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Cập nhật</a><a class="btn btn-danger ms-2" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Xóa</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">20240620001</td>
+                                <td class="text-center">Mô hình Ironman</td>
+                                <td class="text-center">1.200.00 đ</td>
+                                <td class="text-center">Nhựa ABS</td>
+                                <td class="text-center">Collections</td>
+                                <td class="text-center"><a class="btn btn-light" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Cập nhật</a><a class="btn btn-danger ms-2" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Xóa</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">20240620001</td>
+                                <td class="text-center">Mô hình Ironman</td>
+                                <td class="text-center">1.200.00 đ</td>
+                                <td class="text-center">Nhựa ABS</td>
+                                <td class="text-center">Collections</td>
+                                <td class="text-center"><a class="btn btn-light" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Cập nhật</a><a class="btn btn-danger ms-2" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Xóa</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">20240620001</td>
+                                <td class="text-center">Mô hình Ironman</td>
+                                <td class="text-center">1.200.00 đ</td>
+                                <td class="text-center">Nhựa ABS</td>
+                                <td class="text-center">Collections</td>
+                                <td class="text-center"><a class="btn btn-light" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Cập nhật</a><a class="btn btn-danger ms-2" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Xóa</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">20240620001</td>
+                                <td class="text-center">Mô hình Ironman</td>
+                                <td class="text-center">1.200.00 đ</td>
+                                <td class="text-center">Nhựa ABS</td>
+                                <td class="text-center">Collections</td>
+                                <td class="text-center"><a class="btn btn-light" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Cập nhật</a><a class="btn btn-danger ms-2" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Xóa</a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">20240620001</td>
+                                <td class="text-center">Mô hình Ironman</td>
+                                <td class="text-center">1.200.00 đ</td>
+                                <td class="text-center">Nhựa ABS</td>
+                                <td class="text-center">Collections</td>
+                                <td class="text-center"><a class="btn btn-light" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Cập nhật</a><a class="btn btn-danger ms-2" role="button" data-bs-target="#update-modal" data-bs-toggle="modal">Xóa</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex justify-content-center mt-0">
+                    <nav class="pt-0 mt-0 mb-0">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="update-modal" value="Đây là mô hình được in một cách kỳ công">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h4 class="modal-title fs-5">Cập nhật sản phẩm</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body"><label class="form-label" style="display: block;/*width: 100%;*/">Tên sản phẩm<input class="form-control mt-2" type="text" placeholder="Nhập tên sản phẩm" value="Mô hình Iron man"></label><label class="form-label mt-4" style="display: block;/*width: 100%;*/">Giá tiền<input class="form-control mt-2" type="text" placeholder="Đơn vị: đồng" value="1.200.000"></label><label class="form-label mt-4" style="display: block;/*width: 100%;*/">Chất liệu<select class="form-select mt-2">
+                                    <option value="12" selected="">Nhựa ABS</option>
+                                    <option value="13">Nhựa Resin</option>
+                                    <option value="14">Nhựa PLA</option>
+                                </select></label><label class="form-label mt-4" style="display: block;/*width: 100%;*/">Loại sản phẩm<select class="form-select mt-2">
+                                    <option value="">Collections</option>
+                                </select></label><label class="form-label mt-4" style="display: block;/*width: 100%;*/">Mô tả sản phẩm<textarea class="form-control mt-2" value="Đây là mô hình được kỳ công in ra"></textarea></label></div>
+                        <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Hủy</button><button class="btn btn-primary" type="submit">Cập nhật</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="add-modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h4 class="modal-title fs-5">Thêm sản phẩm</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body"><label class="form-label" style="display: block;/*width: 100%;*/">Tên sản phẩm<input class="form-control mt-2" type="text" placeholder="Nhập tên sản phẩm"></label><label class="form-label mt-4" style="display: block;/*width: 100%;*/">Giá tiền<input class="form-control mt-2" type="text" placeholder="Đơn vị: đồng"></label><label class="form-label mt-4" style="display: block;/*width: 100%;*/">Chất liệu<select class="form-select mt-2">
+                                    <option value="12" selected="">Nhựa ABS</option>
+                                    <option value="13">Nhựa Resin</option>
+                                    <option value="14">Nhựa PLA</option>
+                                </select></label><label class="form-label mt-4" style="display: block;/*width: 100%;*/">Loại sản phẩm<select class="form-select mt-2">
+                                    <option value="">Collections</option>
+                                </select></label><label class="form-label mt-4" style="display: block;/*width: 100%;*/">Mô tả sản phẩm<textarea class="form-control mt-2"></textarea></label></div>
+                        <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Hủy</button><button class="btn btn-primary" type="submit">Lưu</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center bg-dark" style="padding-top: 1rem;padding-bottom: 1rem;">
+        <ul class="list-inline">
+            <li class="list-inline-item me-4"></li>
+            <li class="list-inline-item me-4"></li>
+            <li class="list-inline-item"></li>
+        </ul>
+    </footer>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="../assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>

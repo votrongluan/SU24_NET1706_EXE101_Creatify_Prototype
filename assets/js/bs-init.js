@@ -19,4 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
 		hoverAnimationEl.addEventListener('mouseenter', function(e){ e.target.classList.add('animated', e.target.dataset.bssHoverAnimate) });
 		hoverAnimationEl.addEventListener('mouseleave', function(e){ e.target.classList.remove('animated', e.target.dataset.bssHoverAnimate) });
 	});
+
+	var charts = document.querySelectorAll('[data-bss-chart]');
+
+	for (var chart of charts) {
+		chart.chart = new Chart(chart, JSON.parse(chart.dataset.bssChart));
+	}
 }, false);
