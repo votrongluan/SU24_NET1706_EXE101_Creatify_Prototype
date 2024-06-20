@@ -31,12 +31,15 @@
                         </svg></span><span>3D Creatify</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item"><a class="nav-link active" href="products.html">Sản phẩm</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Sản phẩm</a></li>
                         <li class="nav-item"><a class="nav-link" href="custom-print.html">Đặt in</a></li>
                         <li class="nav-item"><a class="nav-link" href="forum.html">Diễn đàn</a></li>
                         <li class="nav-item"></li>
                         <li class="nav-item"><a class="nav-link" href="aboutus.html">Về chúng tôi</a></li>
-                    </ul><a class="btn btn-dark me-4" role="button" href="login.html">Đăng nhập</a><a class="btn btn-primary" role="button" href="register.html">Đăng ký</a>
+                    </ul>
+                    <div class="dropdown me-0" style="margin-right: 40px;"><a class="dropdown-toggle d-table-cell" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="text-decoration: none;color: var(--bs-navbar-active-color);"><img class="rounded-circle img-fluid" alt="man in black button-up shirt" style="width: 40px;height: 40px;margin-right: 8px;" src="assets/img/photo-1535713875002-d1d0cf377fde.jpg">Fullname</a>
+                        <div class="dropdown-menu" style="/*min-width: 100px;*/"><a class="dropdown-item text-center" href="profile.html">Tài khoản</a><a class="dropdown-item text-center" href="order-history.html">Lịch sử đặt</a><a class="dropdown-item text-center" href="login.html">Đăng xuất</a></div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -51,7 +54,16 @@
         </div>
     </header>
     <main class="bg-light mt-0 p-0 py-4" style="min-height: 80vh;">
-        <div class="container"></div>
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <section class="bg-white border rounded shadow-sm p-4 mt-4" style="width: 50%;margin-top: 21px;">
+                    <h2 class="fs-3 text-center">Tài khoản</h2>
+                    <div>
+                        <form style="/*width: 65%;*/"><label class="form-label mt-4" style="display: block;">Email<input class="form-control mt-2" type="text" placeholder="Nhập email của bạn" value="example@example.com"></label><label class="form-label mt-0" style="display: block;">Họ và tên<input class="form-control mt-2" type="text" placeholder="Nhập email của bạn" value="Nguyễn Văn A"></label><label class="form-label mt-0" style="display: block;">Địa chỉ giao hàng<input class="form-control mt-2" type="text" placeholder="Nhập email của bạn" value="1775 đường Nguyễn Bình, quận 6, TP.HCM"></label><label class="form-label mt-4" style="position: relative;display: block;">Mật khẩu<a href="#" style="position: absolute;display: block;text-decoration: none;margin-left: auto;top: 0;right: 0;">Đổi mật khẩu</a></label><button class="btn btn-primary mt-4" type="button" style="width: 100%;">Cập nhật</button></form>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
     <footer class="bg-white pt-0 pb-0">
         <section class="text-white bg-dark border rounded d-flex flex-column justify-content-between flex-lg-row p-4 mt-0">
