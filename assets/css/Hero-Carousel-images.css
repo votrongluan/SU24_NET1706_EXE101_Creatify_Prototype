@@ -53,3 +53,11 @@ element.style : hover {
   transform: translateY(-4px);
 }
 
+.category:hover {
+  background-color: var(--bs-gray-200);
+}
+
+.bg-secondary-subtle.sort-by {
+  cursor: pointer;
+}
+
