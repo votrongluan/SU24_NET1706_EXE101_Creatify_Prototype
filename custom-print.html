@@ -25,11 +25,13 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v20.0" nonce="rZ5CAAbj"></script>
     <header class="pb-4">
         <nav class="navbar navbar-expand-md py-3 pb-0">
-            <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html">
+            <div class="container"><a class="navbar-brand d-flex align-items-center">
                     <div style="width: 80px;height: 80px;background: url(&quot;assets/img/logo3.jpg&quot;) center / contain no-repeat;"></div>
                 </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-2">
-                    <ul class="navbar-nav fs-5 me-auto">
+                    <ul class="navbar-nav fs-6 me-auto">
+                        <li class="nav-item"><a class="nav-link ms-4" href="index.html">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link ms-4" style="cursor: pointer;" data-bs-target="#personal-space" data-bs-toggle="modal">Cá nhân hóa</a></li>
                         <li class="nav-item"><a class="nav-link ms-4" href="products.html">Sản phẩm</a></li>
                         <li class="nav-item"><a class="nav-link ms-4" href="custom-print.html">Đặt in</a></li>
                         <li class="nav-item"><a class="nav-link ms-4" href="forum.html">Diễn đàn</a></li>
@@ -51,17 +53,29 @@
                     </svg>&nbsp;Giỏ hàng&nbsp;<span class="badge bg-primary">0</span></a>
             </div>
         </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="personal-space" style="/*width: 500px;*/">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Mô hình của bạn</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-2"><iframe src='https://my.spline.design/untitled-befb497244cd4a0951308d20fc8d9f00/' frameborder='0' width='100%' height='500px'></iframe></div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Đóng</button></div>
+                </div>
+            </div>
+        </div>
     </header>
     <main class="bg-light mt-0 p-0 py-4" style="min-height: 80vh;">
         <div class="container">
             <div class="d-flex justify-content-center">
                 <section class="bg-white border rounded shadow-sm mt-0" style="width: 50%;">
                     <h2 class="fs-3 pt-0 m-4 mb-0" style="text-align: center;">Đặt in theo yêu cầu</h2>
-                    <div class="d-flex flex-column justify-content-center align-items-center" style="/*width: 50%;*/">
-                        <form class="p-4" style="/*width: 50%;*/"><label class="form-label mt-0" style="display: block;">Tên<input class="form-control mt-2" type="text" placeholder="Nhập email của bạn" value="Nguyễn Văn A"></label><label class="form-label mt-4" style="display: block;">Số điện thoại<input class="form-control mt-2" type="text" placeholder="Nhập email của bạn" value="0982934834"></label><label class="form-label mt-4" style="display: block;">Địa chỉ giao hàng<input class="form-control mt-2" type="text" placeholder="Nhập email của bạn" value="1775 đường Nguyễn Bình, quận 6, TP.HCM"></label><label class="form-label mt-4" style="display: block;">Email<input class="form-control mt-2" type="text" placeholder="Nhập email của bạn" value="example@example.com"></label><label class="form-label mt-4" style="display: block;">File<input class="form-control mt-2" type="file"></label><label class="form-label mt-4" style="display: block;">Ghi chú của bạn<textarea class="form-control mt-2" style="height: 150px;"></textarea></label><label class="form-label mt-4" style="display: block;">Lưu ý: Tình trạng và giá của sản phẩm sẽ được cập nhật trong lịch sự đặt hàng của bạn</label></form>
-                        <div class="pb-4" style="width: 50%;"><button class="btn btn-primary d-flex justify-content-center align-items-center me-3 mt-0" type="button" style="margin-left: auto;margin-right: 14px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-all">
-                                    <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z"></path>
-                                </svg>&nbsp;Xác nhận</button></div>
+                    <div class="d-flex flex-column justify-content-center align-items-center pb-4" style="/*width: 50%;*/">
+                        <form class="p-4" style="/*width: 50%;*/"><label class="form-label mt-0" style="display: block;">Tên<input class="form-control mt-2" type="text" placeholder="Nhập email của bạn" value="Nguyễn Văn A"></label><label class="form-label mt-4" style="display: block;">Số điện thoại<input class="form-control mt-2" type="text" placeholder="Nhập email của bạn" value="0982934834"></label><label class="form-label mt-4" style="display: block;">Địa chỉ giao hàng<input class="form-control mt-2" type="text" placeholder="Nhập email của bạn" value="1775 đường Nguyễn Bình, quận 6, TP.HCM"></label><label class="form-label mt-4" style="display: block;">Email<input class="form-control mt-2" type="text" placeholder="Nhập email của bạn" value="example@example.com"></label><label class="form-label mt-4" style="display: block;">File<input class="form-control mt-2" type="file"></label><label class="form-label mt-4" style="display: block;">Ghi chú của bạn<textarea class="form-control mt-2" style="height: 150px;"></textarea></label><label class="form-label mt-4" style="display: block;">Lưu ý: Tình trạng và giá của sản phẩm sẽ được cập nhật trong lịch sự đặt hàng của bạn</label></form><button class="btn btn-primary d-flex justify-content-center align-items-center me-3 mt-0" type="button" style="/*margin-left: auto;*/margin-right: 14px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-all">
+                                <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z"></path>
+                            </svg>&nbsp;Xác nhận</button>
                     </div>
                 </section>
             </div>

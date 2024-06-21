@@ -25,11 +25,13 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v20.0" nonce="rZ5CAAbj"></script>
     <header class="pb-4">
         <nav class="navbar navbar-expand-md py-3 pb-0">
-            <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html">
+            <div class="container"><a class="navbar-brand d-flex align-items-center">
                     <div style="width: 80px;height: 80px;background: url(&quot;assets/img/logo3.jpg&quot;) center / contain no-repeat;"></div>
-                </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="navbar-nav fs-5 me-auto">
+                </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-2">
+                    <ul class="navbar-nav fs-6 me-auto">
+                        <li class="nav-item"><a class="nav-link ms-4" href="index.html">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link ms-4" data-bs-target="#personal-space" data-bs-toggle="modal" style="cursor: pointer;">Cá nhân hóa</a></li>
                         <li class="nav-item"><a class="nav-link ms-4" href="products.html">Sản phẩm</a></li>
                         <li class="nav-item"><a class="nav-link ms-4" href="custom-print.html">Đặt in</a></li>
                         <li class="nav-item"><a class="nav-link ms-4" href="forum.html">Diễn đàn</a></li>
@@ -48,6 +50,19 @@
                     </svg>&nbsp;Giỏ hàng&nbsp;<span class="badge bg-primary">0</span></a>
             </div>
         </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="personal-space" style="/*width: 500px;*/">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Mô hình của bạn</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-2"><iframe src='https://my.spline.design/untitled-befb497244cd4a0951308d20fc8d9f00/' frameborder='0' width='100%' height='500px'></iframe></div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Đóng</button></div>
+                </div>
+            </div>
+        </div>
     </header>
     <main class="bg-light mt-0 p-0 py-4" style="min-height: 80vh;">
         <div class="container">
@@ -60,6 +75,7 @@
                                 <th style="text-align: center;" class="p-3">Sản phẩm</th>
                                 <th class="text-center p-3">Giá tiền</th>
                                 <th class="text-center p-3">Số lượng</th>
+                                <th class="text-center p-3">Thao tác</th>
                                 <th class="text-end p-3 pe-3">Tổng cộng</th>
                             </tr>
                         </thead>
@@ -72,22 +88,31 @@
                                 </td>
                                 <td class="text-center">
                                     <div class="d-flex justify-content-center align-items-center" style="height: 150px;">
-                                        <p>1.200.000 đ</p>
+                                        <p class="mb-0">1.200.000 đ</p>
                                     </div>
                                 </td>
                                 <td class="text-center">
-                                    <div class="d-flex flex-column justify-content-center align-items-center" style="column-gap: 2px;height: 150px;">
+                                    <div class="d-flex flex-column justify-content-center align-items-center pt-4" style="column-gap: 2px;height: 150px;">
                                         <div class="d-flex flex-row justify-content-center align-items-center pb-0" style="column-gap: 4px;"><button class="btn btn-light" type="button">-</button><button class="btn" type="button">1</button><button class="btn btn-light" type="button">+</button></div>
                                         <div>
                                             <p class="text-danger mb-0 p-2" style="cursor: pointer;">Xóa</p>
                                         </div>
                                     </div>
                                 </td>
+                                <td class="text-center">
+                                    <div class="text-center d-flex justify-content-center align-items-center" style="height: 150px;"><button class="btn btn-dark d-flex justify-content-center align-items-center" type="button" style="/*margin-left: auto;*/" data-bs-target="#model-custom" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor">
+                                                <g>
+                                                    <path d="M0,0h24v24H0V0z" fill="none"></path>
+                                                    <path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"></path>
+                                                </g>
+                                            </svg>&nbsp;Chỉnh sửa</button></div>
+                                </td>
                                 <td class="text-end">
                                     <div class="d-flex justify-content-end align-items-center" style="height: 150px;">
-                                        <p class="fw-normal pe-3"><strong>1.200.000 đ</strong></p>
+                                        <p class="fw-normal pe-3 mb-0"><strong>1.200.000 đ</strong></p>
                                     </div>
                                 </td>
+                                <td class="text-end"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -97,22 +122,31 @@
                                 </td>
                                 <td class="text-center">
                                     <div class="d-flex justify-content-center align-items-center" style="height: 150px;">
-                                        <p>1.200.000 đ</p>
+                                        <p class="mb-0">1.200.000 đ</p>
                                     </div>
                                 </td>
                                 <td class="text-center">
-                                    <div class="d-flex flex-column justify-content-center align-items-center" style="column-gap: 2px;height: 150px;">
+                                    <div class="d-flex flex-column justify-content-center align-items-center pt-4" style="column-gap: 2px;height: 150px;">
                                         <div class="d-flex flex-row justify-content-center align-items-center pb-0" style="column-gap: 4px;"><button class="btn btn-light" type="button">-</button><button class="btn" type="button">1</button><button class="btn btn-light" type="button">+</button></div>
                                         <div>
                                             <p class="text-danger mb-0 p-2" style="cursor: pointer;">Xóa</p>
                                         </div>
                                     </div>
                                 </td>
+                                <td class="text-center">
+                                    <div class="text-center d-flex justify-content-center align-items-center" style="height: 150px;"><button class="btn btn-dark d-flex justify-content-center align-items-center" type="button" style="/*margin-left: auto;*/" data-bs-target="#model-custom" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor">
+                                                <g>
+                                                    <path d="M0,0h24v24H0V0z" fill="none"></path>
+                                                    <path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"></path>
+                                                </g>
+                                            </svg>&nbsp;Chỉnh sửa</button></div>
+                                </td>
                                 <td class="text-end">
                                     <div class="d-flex justify-content-end align-items-center" style="height: 150px;">
-                                        <p class="fw-normal pe-3"><strong>1.200.000 đ</strong></p>
+                                        <p class="fw-normal pe-3 mb-0"><strong>1.200.000 đ</strong></p>
                                     </div>
                                 </td>
+                                <td class="text-end"></td>
                             </tr>
                             <tr>
                                 <td>
@@ -122,22 +156,65 @@
                                 </td>
                                 <td class="text-center">
                                     <div class="d-flex justify-content-center align-items-center" style="height: 150px;">
-                                        <p>1.200.000 đ</p>
+                                        <p class="mb-0">1.200.000 đ</p>
                                     </div>
                                 </td>
                                 <td class="text-center">
-                                    <div class="d-flex flex-column justify-content-center align-items-center" style="column-gap: 2px;height: 150px;">
+                                    <div class="d-flex flex-column justify-content-center align-items-center pt-4" style="column-gap: 2px;height: 150px;">
                                         <div class="d-flex flex-row justify-content-center align-items-center pb-0" style="column-gap: 4px;"><button class="btn btn-light" type="button">-</button><button class="btn" type="button">1</button><button class="btn btn-light" type="button">+</button></div>
                                         <div>
                                             <p class="text-danger mb-0 p-2" style="cursor: pointer;">Xóa</p>
                                         </div>
                                     </div>
                                 </td>
+                                <td class="text-center">
+                                    <div class="text-center d-flex justify-content-center align-items-center" style="height: 150px;"><button class="btn btn-dark d-flex justify-content-center align-items-center" type="button" style="/*margin-left: auto;*/" data-bs-target="#model-custom" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor">
+                                                <g>
+                                                    <path d="M0,0h24v24H0V0z" fill="none"></path>
+                                                    <path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"></path>
+                                                </g>
+                                            </svg>&nbsp;Chỉnh sửa</button></div>
+                                </td>
                                 <td class="text-end">
                                     <div class="d-flex justify-content-end align-items-center" style="height: 150px;">
-                                        <p class="fw-normal pe-3"><strong>1.200.000 đ</strong></p>
+                                        <p class="fw-normal pe-3 mb-0"><strong>1.200.000 đ</strong></p>
                                     </div>
                                 </td>
+                                <td class="text-end"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div style="width: 100%;background: url(&quot;assets/img/3d-creatify-asset/328628521_957649392308701_3010167479347044211_n.jpg&quot;) center / contain no-repeat;height: 146px;"></div>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="d-flex justify-content-center align-items-center" style="height: 150px;">
+                                        <p class="mb-0">1.200.000 đ</p>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="d-flex flex-column justify-content-center align-items-center pt-4" style="column-gap: 2px;height: 150px;">
+                                        <div class="d-flex flex-row justify-content-center align-items-center pb-0" style="column-gap: 4px;"><button class="btn btn-light" type="button">-</button><button class="btn" type="button">1</button><button class="btn btn-light" type="button">+</button></div>
+                                        <div>
+                                            <p class="text-danger mb-0 p-2" style="cursor: pointer;">Xóa</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-center d-flex justify-content-center align-items-center" style="height: 150px;"><button class="btn btn-dark d-flex justify-content-center align-items-center" type="button" style="/*margin-left: auto;*/" data-bs-target="#model-custom" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor">
+                                                <g>
+                                                    <path d="M0,0h24v24H0V0z" fill="none"></path>
+                                                    <path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"></path>
+                                                </g>
+                                            </svg>&nbsp;Chỉnh sửa</button></div>
+                                </td>
+                                <td class="text-end">
+                                    <div class="d-flex justify-content-end align-items-center" style="height: 150px;">
+                                        <p class="fw-normal pe-3 mb-0"><strong>1.200.000 đ</strong></p>
+                                    </div>
+                                </td>
+                                <td class="text-end"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -149,6 +226,19 @@
                             <path d="M13 16V6C13 5.44772 12.5523 5 12 5H4C3.44772 5 3 5.44772 3 6V16C3 16.5523 3.44772 17 4 17H5M13 16C13 16.5523 12.5523 17 12 17H9M13 16L13 8C13 7.44772 13.4477 7 14 7H16.5858C16.851 7 17.1054 7.10536 17.2929 7.29289L20.7071 10.7071C20.8946 10.8946 21 11.149 21 11.4142V16C21 16.5523 20.5523 17 20 17H19M13 16C13 16.5523 13.4477 17 14 17H15M5 17C5 18.1046 5.89543 19 7 19C8.10457 19 9 18.1046 9 17M5 17C5 15.8954 5.89543 15 7 15C8.10457 15 9 15.8954 9 17M15 17C15 18.1046 15.8954 19 17 19C18.1046 19 19 18.1046 19 17M15 17C15 15.8954 15.8954 15 17 15C18.1046 15 19 15.8954 19 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>&nbsp;Đặt hàng</a></div>
             </section>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="model-custom" style="/*width: 500px;*/">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Chỉnh sửa trực tuyến</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-2"><iframe src='https://my.spline.design/untitled-befb497244cd4a0951308d20fc8d9f00/' frameborder='0' width='100%' height='500px'></iframe></div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Hủy</button><button class="btn btn-primary" type="button" data-bs-dismiss="modal">Lưu</button></div>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="bg-white pt-0 pb-0 mt-0">
