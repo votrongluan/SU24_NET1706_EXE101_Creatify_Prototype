@@ -61,3 +61,18 @@ element.style : hover {
   cursor: pointer;
 }
 
+.bg-body-secondary.link-hover {
+  display: block;
+}
+
+.bg-body-secondary.link-hover:hover {
+  font-weight: 500;
+  text-decoration: underline;
+  /*background-color: var(--bs-black);*/
+  /*color: var(--bs-white);*/
+}
+
+.bg-body-tertiary.link-hover.navigate-item:hover {
+  text-decoration: underline;
+}
+
