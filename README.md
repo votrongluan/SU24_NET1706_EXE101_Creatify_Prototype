@@ -97,6 +97,29 @@ If you need help, you can reach out via:
 
 ## Screenshots
 
+<div style="text-align: center;">
+    <img src="img/homepage.png" alt="Login form" style="width: 70%;"/>
+    <p><em>Screenshot 1</em></p>
+</div>
+
+<hr/>
+<br/>
+
+<div style="text-align: center;">
+    <img src="img/category.png" alt="Admin dashboard" style="width: 70%;"/>
+    <p><em>Screenshot 2</em></p>
+</div>
+
+<hr/>
+<br/>
+
+<div style="text-align: center;">
+    <img src="img/order.png" alt="Model management" style="width: 70%;"/>
+    <p><em>Screenshot 3</em></p>
+</div>
+
+<hr/>
+<br/>
 
 ## Contributing
 
