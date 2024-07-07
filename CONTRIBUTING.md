@@ -9,13 +9,13 @@ This project is no longer actively maintained. However, you are welcome to clone
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/votrongluan/tank-management-winform
+   git clone https://github.com/votrongluan/3d-creatify-prototype
    ```
 
 2. **Navigate into the project directory:**
 
    ```bash
-   cd tank-management-winform
+   cd 3d-creatify-prototype
    ```
 
 ### Branching Strategy (Recommended)
